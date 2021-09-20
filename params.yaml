@@ -4,14 +4,14 @@ base:
   target_col: TARGET
 
 data_source:
-  s3_source: data_given/winequality.csv
+  s3_source: 'C:\Ineuron Project\mlops_simp_app\data_given\winequality.csv'
 
 load_data:
-  raw_dataset_csv: data/raw/winequality.csv
+  raw_dataset_csv: 'C:\Ineuron Project\mlops_simp_app\data\raw\winequality.csv'
 
 split_data:
-  train_path: data/processed/train_winequality.csv
-  test_path: data/processed/test_winequality.csv
+  train_path: 'C:\Ineuron Project\mlops_simp_app\data\processed\train_winequality.csv'
+  test_path: 'C:\Ineuron Project\mlops_simp_app\data\processed\test_winequality.csv'
   test_size: 0.2
 
 estimators:
@@ -24,7 +24,7 @@ estimators:
 model_dir: saved_models
 
 reports:
-  params: report/params.json
-  scores: report/scores.json
+  params: report\params.json
+  scores: report\scores.json
 
-webapp_model_dir: prediction_service/model/model.joblib
+webapp_model_dir: prediction_service\model\model.joblib
